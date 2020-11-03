@@ -1,4 +1,4 @@
-/* ##########GLOBAL STYLES########## */
+/* ##########STYLES########## */
 
 html, body {
   max-width: 100%;
@@ -37,11 +37,13 @@ hr{
 }
 
 .scrolled-down{
-  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  transform:translateY(-100%); 
+  transition: all 0.3s ease-in-out;
 }
 
 .scrolled-up{
-  transform:translateY(0); transition: all 0.3s ease-in-out;
+  transform:translateY(0); 
+  transition: all 0.3s ease-in-out;
 }
 
 /* BANNER */
@@ -66,39 +68,6 @@ hr{
   font-size: 6.5rem;
   margin-top: 150px;
 }
-
-/* PAGEBODY */
-
-.pagebody{
-  padding: 150px 0;
-  text-align: justify;
-}
-
-.pagetitle{
-  margin: 0 0 50px;
-}
-
-.p-title{
-  text-align: left;
-}
-
-.text-block{
-  padding: 0 20%;
-}
-
-/* FOOTER */
-
-.footer{
-  background-color: #e8f1f5;
-  color: #1989ac;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  padding: 50px;
-}
-
-/* ##########HOMEPAGE########## */
-
-/* BANNER */
 
 .banner-home{
   height: 100vh;
@@ -147,8 +116,25 @@ hr{
 
 /* PAGEBODY */
 
+.pagebody{
+  margin: 150px 0;
+  text-align: justify;
+}
+
+.pagetitle{
+  margin: 0 0 50px;
+}
+
+.p-title{
+  text-align: left;
+}
+
+.text-block{
+  margin: 0 20%;
+}
+
 .intro{
-  padding: 0 35%;
+  margin: 0 35%;
 }
 
 .developper-img{
@@ -167,6 +153,73 @@ hr{
   max-width: 650px;
 }
 
-/* ##########OTHERPAGES########## */
+.whitespace{
+  height: 250px;
+}
 
-/* BANNER */
+.languages-box{
+  border: 5px solid #ffb300;
+  border-radius: 50px;
+  text-align: center;
+  padding:3%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.languages-title{
+  color: #1989ac;
+  margin: 20px;
+}
+
+.language{
+  text-align: left;
+  position: relative;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.language:hover{
+  background-color: #f8f8f8;
+  animation: pop 0.3s linear 1;
+  transform: scale(1.03);
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.05);}
+}
+
+.language-line{
+  border:1px solid;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.language-rating{
+  position: absolute;
+  right: 0;
+  margin-right: 25px;
+}
+
+.fab, .fas{
+  font-size: 25px;
+  margin: 0 5px;
+  width: 30px;
+}
+
+.active{
+  color: #ffb300;
+}
+
+.inactive{
+  color: #e8f1f5;
+}
+
+/* FOOTER */
+
+.footer{
+  background-color: #e8f1f5;
+  color: #1989ac;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
