@@ -1,0 +1,172 @@
+/* ##########GLOBAL STYLES########## */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Merriweather', serif;
+}
+
+h1,h2,h3{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffb300;
+}
+
+hr{
+  color: #e8f1f5;
+  width: 75px;
+  border-style: dotted;
+  border-width: 8px 0 0;
+  margin: 100px auto;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background-color: #283e56;
+  padding: 8px 15%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+/* BANNER */
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  background-color: #283e56;
+  position: relative;
+  padding: 0;
+  height: 600px;
+}
+
+.banner-content{
+  background-image: url("/media/stars.png"), linear-gradient(#283e56, #1989ac);
+  flex: 1;
+}
+
+.banner-title{
+  font-family: 'Ubuntu Mono', monospace;
+  color: #e8f1f5;
+  font-size: 6.5rem;
+  margin-top: 150px;
+}
+
+/* PAGEBODY */
+
+.pagebody{
+  padding: 150px 0;
+  text-align: justify;
+}
+
+.pagetitle{
+  margin: 0 0 50px;
+}
+
+.p-title{
+  text-align: left;
+}
+
+.text-block{
+  padding: 0 20%;
+}
+
+/* FOOTER */
+
+.footer{
+  background-color: #e8f1f5;
+  color: #1989ac;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+/* ##########HOMEPAGE########## */
+
+/* BANNER */
+
+.banner-home{
+  height: 100vh;
+  min-height:650px;
+}
+
+.banner-home-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-gif{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 370px;
+  max-width: 720px;
+  width: 90%;
+}
+
+.subtitle{
+  font-weight: 400;
+  color: #e8f1f5;
+  margin-top: 50px;
+}
+
+.planet1{
+  width: 18%;
+  min-width: 150px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: rotate(-20deg);
+}
+
+.planet2{
+  width: 18%;
+  min-width: 150px;
+  position: absolute;
+  bottom: 10%;
+  right: 9%;
+  transform: rotate(40deg);
+}
+
+/* PAGEBODY */
+
+.intro{
+  padding: 0 35%;
+}
+
+.developper-img{
+  float:left;
+  width: 70%;
+  margin: 0 20px 20px -35%;
+  min-width: 320px;
+  max-width: 650px;
+}
+
+.designer-img{
+  float:right;
+  width: 70%;
+  margin: 0 -35% 20px 20px;
+  min-width: 320px;
+  max-width: 650px;
+}
+
+/* ##########OTHERPAGES########## */
+
+/* BANNER */
