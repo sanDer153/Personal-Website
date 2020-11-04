@@ -4,6 +4,10 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Merriweather', serif;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 h1,h2,h3{
@@ -154,10 +158,10 @@ hr{
 }
 
 .whitespace{
-  height: 250px;
+  height: 150px;
 }
 
-.languages-box{
+.pl-box{
   border: 5px solid #ffb300;
   border-radius: 50px;
   text-align: center;
@@ -165,35 +169,54 @@ hr{
   font-family: 'Montserrat', sans-serif;
 }
 
-.languages-title{
+.pl-box-title{
   color: #1989ac;
   margin: 20px;
 }
 
-.language{
+.pl{
   text-align: left;
   position: relative;
-  padding: 25px;
   border-radius: 10px;
 }
 
-.language:hover{
+.pl:hover{
   background-color: #f8f8f8;
-  animation: pop 0.3s linear 1;
+  animation: pop 0.2s linear 1;
   transform: scale(1.03);
+  cursor: pointer;
 }
 
 @keyframes pop{
   50%  {transform: scale(1.05);}
 }
 
-.language-line{
+.pl-header{
+  padding: 25px;
+}
+
+.pl-text{
+  padding: 25px;
+  border-top: 1px solid #e8f1f5;
+  font-family: 'Merriweather', serif;
+  font-size: 0.9rem;
+}
+
+.pl-text-clicked{
+  display: block;
+}
+
+.pl-text-unclicked{
+  display: none;
+}
+
+.pl-line{
   border:1px solid;
   width: 100%;
   margin: 10px 0;
 }
 
-.language-rating{
+.pl-rating{
   position: absolute;
   right: 0;
   margin-right: 25px;

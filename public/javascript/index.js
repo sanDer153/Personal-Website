@@ -14,10 +14,9 @@ function unhover2(element) {
   element.setAttribute('src', 'media/Planet2Ortho.png');
 }
 
-// add padding top to show content behind navbar
+
 $('.banner-content').css('margin-top', $('.navbar').outerHeight() + 'px');
 
-// detect scroll top or down
 if ($('.smart-scroll').length > 0 && window.screen.width > 920) { // check if element exists
     var last_scroll_top = 0;
     $(window).on('scroll', function() {
@@ -30,4 +29,14 @@ if ($('.smart-scroll').length > 0 && window.screen.width > 920) { // check if el
         }
         last_scroll_top = scroll_top;
     });
+}
+
+function plClick(element){
+  if($(element).find('.pl-text').hasClass('pl-text-clicked')){
+    $('.pl-text').removeClass('pl-text-clicked').addClass('pl-text-unclicked');
+  }else{
+    $('.pl-text').removeClass('pl-text-clicked').addClass('pl-text-unclicked');
+    $(element).find('.pl-text').removeClass('pl-text-unclicked').addClass('pl-text-clicked');
+  }
+  
 }
